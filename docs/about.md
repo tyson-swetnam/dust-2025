@@ -34,7 +34,7 @@ Open science should be accessible to all researchers, regardless of technical ba
 
 ### Continuous Improvement
 
-This training is a living resource. We welcome feedback, suggestions, and contributions from the community. Open an [issue on GitHub](https://github.com/tswetnam/dust-2025/issues) or submit a pull request to help improve these materials.
+This training is a living resource. We welcome feedback, suggestions, and contributions from the community. Open an [issue on GitHub](https://github.com/tyson-swetnam/dust-2025/issues) or submit a pull request to help improve these materials.
 
 ## Who Created This?
 
@@ -102,7 +102,7 @@ This website is built with:
 - **GitHub Pages** - Free hosting for open source projects
 - **GitHub Actions** - Automated building and deployment
 
-The entire source is available on [GitHub](https://github.com/tswetnam/dust-2025), allowing you to:
+The entire source is available on [GitHub](https://github.com/tyson-swetnam/dust-2025), allowing you to:
 
 - View the source markdown files
 - Propose improvements or corrections
@@ -119,7 +119,7 @@ We strive to make these materials accessible to all learners:
 - Alternative text for images
 - Clear, readable fonts
 
-If you encounter accessibility barriers, please [let us know](https://github.com/tswetnam/dust-2025/issues) so we can improve.
+If you encounter accessibility barriers, please [let us know](https://github.com/tyson-swetnam/dust-2025/issues) so we can improve.
 
 ## Privacy
 
@@ -149,7 +149,7 @@ Under these terms:
 
 For questions, suggestions, or issues:
 
-- Open an [issue on GitHub](https://github.com/tswetnam/dust-2025/issues)
+- Open an [issue on GitHub](https://github.com/tyson-swetnam/dust-2025/issues)
 - Email: [tswetnam@arizona.edu](mailto:tswetnam@arizona.edu)
 
 ## Version History

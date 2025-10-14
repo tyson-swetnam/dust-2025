@@ -9,7 +9,7 @@ DUST 2025 is an open science training website built with MkDocs and Material for
 2. Modern Data Management for Computational Research
 3. Ethics and Artificial Intelligence
 
-The site is deployed automatically to GitHub Pages at https://tswetnam.github.io/dust-2025.
+The site is deployed automatically to GitHub Pages at https://tyson-swetnam.github.io/dust-2025.
 
 ## Build and Development Commands
 

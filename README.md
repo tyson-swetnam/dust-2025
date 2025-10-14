@@ -12,7 +12,7 @@ A comprehensive training program covering three essential topics for modern rese
 
 ## Website
 
-Visit the training site: **[https://tswetnam.github.io/dust-2025](https://tswetnam.github.io/dust-2025)**
+Visit the training site: **[https://tyson-swetnam.github.io/dust-2025](https://tyson-swetnam.github.io/dust-2025)**
 
 ## Features
 
@@ -43,7 +43,7 @@ Each 50-minute lesson includes:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/tswetnam/dust-2025.git
+git clone https://github.com/tyson-swetnam/dust-2025.git
 cd dust-2025
 ```
 
@@ -152,7 +152,7 @@ This training synthesizes materials from:
 - [Intro to GPT Workshop](https://tyson-swetnam.github.io/intro-gpt) - AI ethics and prompt engineering
 - [Awesome Open Science](https://tyson-swetnam.github.io/awesome-open-science) - Curated open science resources
 
-See [Acknowledgments](https://tswetnam.github.io/dust-2025/acknowledgments/) for detailed attribution.
+See [Acknowledgments](https://tyson-swetnam.github.io/dust-2025/acknowledgments/) for detailed attribution.
 
 ## Contributing
 
@@ -160,8 +160,8 @@ We welcome contributions to improve this training!
 
 ### Ways to Contribute
 
-- **Report issues** - Found a typo, broken link, or error? [Open an issue](https://github.com/tswetnam/dust-2025/issues)
-- **Suggest improvements** - Have ideas for better examples or explanations? [Open an issue](https://github.com/tswetnam/dust-2025/issues)
+- **Report issues** - Found a typo, broken link, or error? [Open an issue](https://github.com/tyson-swetnam/dust-2025/issues)
+- **Suggest improvements** - Have ideas for better examples or explanations? [Open an issue](https://github.com/tyson-swetnam/dust-2025/issues)
 - **Submit changes** - Fix or enhance content by submitting a pull request
 - **Share feedback** - Tell us how you used these materials and what worked well
 
@@ -202,16 +202,16 @@ You must:
 **Suggested Attribution:**
 
 > Adapted from "DUST 2025: Open Science Training" by Tyson Swetnam
-> ([https://tswetnam.github.io/dust-2025](https://tswetnam.github.io/dust-2025)),
+> ([https://tyson-swetnam.github.io/dust-2025](https://tyson-swetnam.github.io/dust-2025)),
 > licensed under CC-BY 4.0
 
 ### For Self-Study
 
 Work through lessons at your own pace:
 
-1. Start with [Lesson 1: Foundations of Open Science](https://tswetnam.github.io/dust-2025/lesson1_open_science/)
-2. Continue to [Lesson 2: Modern Data Management](https://tswetnam.github.io/dust-2025/lesson2_data_management/)
-3. Finish with [Lesson 3: AI Ethics](https://tswetnam.github.io/dust-2025/lesson3_ai_ethics/)
+1. Start with [Lesson 1: Foundations of Open Science](https://tyson-swetnam.github.io/dust-2025/lesson1_open_science/)
+2. Continue to [Lesson 2: Modern Data Management](https://tyson-swetnam.github.io/dust-2025/lesson2_data_management/)
+3. Finish with [Lesson 3: AI Ethics](https://tyson-swetnam.github.io/dust-2025/lesson3_ai_ethics/)
 
 Each lesson takes approximately 50 minutes. Complete activities and self-assessments to maximize learning.
 
@@ -236,7 +236,7 @@ This repository is configured for automatic deployment:
 1. Push to `main` branch
 2. GitHub Actions builds the site
 3. Deploys to GitHub Pages
-4. Site available at `https://tswetnam.github.io/dust-2025`
+4. Site available at `https://tyson-swetnam.github.io/dust-2025`
 
 ### Manual Deployment
 
@@ -268,7 +268,7 @@ If you use these materials in research, teaching, or publication, please cite:
   title={DUST 2025: Open Science Training},
   author={Swetnam, Tyson L.},
   year={2025},
-  howpublished={\url{https://tswetnam.github.io/dust-2025}},
+  howpublished={\url{https://tyson-swetnam.github.io/dust-2025}},
   note={Licensed under CC-BY 4.0}
 }
 ```
@@ -276,7 +276,7 @@ If you use these materials in research, teaching, or publication, please cite:
 **APA:**
 
 > Swetnam, T. L. (2025). DUST 2025: Open Science Training.
-> https://tswetnam.github.io/dust-2025
+> https://tyson-swetnam.github.io/dust-2025
 
 ## License
 
@@ -311,12 +311,12 @@ This training builds on excellent work by:
 - NCEMS Community
 - Open science communities worldwide
 
-See [Acknowledgments](https://tswetnam.github.io/dust-2025/acknowledgments/) for complete credits.
+See [Acknowledgments](https://tyson-swetnam.github.io/dust-2025/acknowledgments/) for complete credits.
 
 ## Support
 
-- **Technical issues:** [Open an issue](https://github.com/tswetnam/dust-2025/issues)
-- **Questions about content:** [Open a discussion](https://github.com/tswetnam/dust-2025/discussions)
+- **Technical issues:** [Open an issue](https://github.com/tyson-swetnam/dust-2025/issues)
+- **Questions about content:** [Open a discussion](https://github.com/tyson-swetnam/dust-2025/discussions)
 - **General inquiries:** Email tswetnam@arizona.edu
 
 ---
