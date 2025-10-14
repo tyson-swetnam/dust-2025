@@ -1,15 +1,20 @@
 # Welcome to DUST 2025 Open Science Training
 
 <figure markdown="span">
-  ![Open Science](https://upload.wikimedia.org/wikipedia/commons/2/28/Open_Science_-_Prinzipien.png){ width="600" }
-  <figcaption>Open Science Principles (CC-BY-SA 4.0, Wikimedia Commons)</figcaption>
+  ![Open Science](assets/open_science_word_cloud.png){ width="600" }
+  <figcaption>Open Science encompasses many interconnected practices and principles</figcaption>
 </figure>
 
 ## About This Training
 
-Welcome to the DUST 2025 Open Science Training program. This comprehensive training consists of three carefully designed 50-minute lessons that will guide you through the fundamentals of modern open science practices, data management, and ethical considerations in artificial intelligence.
+Welcome to the DUST 2025 Open Science Training program, designed specifically for graduate students and researchers at the **University of Arizona DUST Superfund Research Center**. This comprehensive training consists of three carefully designed 50-minute lessons that will guide you through the fundamentals of modern open science practices, data management, and ethical considerations in artificial intelligence.
 
-Whether you are a graduate student, early-career researcher, or established scientist looking to modernize your research practices, this training will provide you with practical skills and knowledge to conduct more transparent, reproducible, and impactful research.
+!!! info "For DUST Superfund Researchers"
+    The DUST Center investigates hazardous waste issues in the U.S. Southwest, focusing on arsenic and mine tailings contamination. This training incorporates examples from environmental health research, toxicology, phytoremediation, and environmental justice - directly relevant to your work on mine waste contamination and human health impacts.
+
+    Learn more about the DUST program: [superfund.arizona.edu](https://superfund.arizona.edu/)
+
+As an environmental health researcher studying mine tailings, arsenic exposure, lung injury, or phytoremediation, open science practices are essential for advancing public health and environmental remediation. This training will help you manage complex environmental datasets, share findings with affected communities, and use AI tools ethically in environmental health research.
 
 ## What You Will Learn
 
@@ -58,12 +63,13 @@ By the end of this training, you will be able to:
 
 This training is designed for:
 
-- Graduate students and postdoctoral researchers
-- Early-career faculty and research scientists
-- Research support staff and data managers
-- Anyone interested in modernizing their research practices
-- Researchers preparing grant proposals requiring data management plans
-- Teams looking to improve collaboration and reproducibility
+- **DUST Superfund graduate students** studying environmental health, toxicology, and remediation
+- Graduate students and postdoctoral researchers in environmental sciences
+- Researchers working with mine waste contamination and human health data
+- Scientists studying arsenic exposure, lung disease, or phytoremediation
+- Early-career faculty in environmental health and public health
+- Anyone preparing NIH Superfund Research Program proposals
+- Teams collaborating on multi-site field studies with hazardous materials
 
 ## Training Structure
 

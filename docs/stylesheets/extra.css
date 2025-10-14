@@ -1,9 +1,20 @@
 /* Custom CSS for DUST 2025 Open Science Training */
+/* University of Arizona DUST Superfund Research Center */
+
+/* UA Color Scheme */
+[data-md-color-scheme="ua"] {
+  --md-primary-fg-color:        #AB0520;  /* Arizona Red */
+  --md-primary-fg-color--light: #E48C88;  /* Light Red */
+  --md-primary-fg-color--dark:  #8B0015;  /* Dark Red */
+  --md-accent-fg-color:         #378DBD;  /* Oasis Blue */
+  --md-accent-fg-color--light:  #81D3EB;  /* Light Blue */
+  --md-accent-fg-color--dark:   #0C234B;  /* Arizona Blue */
+}
 
 /* Root variables for consistent theming */
 :root {
-  --md-primary-fg-color: #3f51b5;
-  --md-accent-fg-color: #ff5722;
+  --md-primary-fg-color: #AB0520;  /* Arizona Red */
+  --md-accent-fg-color: #378DBD;   /* Oasis Blue */
 }
 
 /* Improve readability of long-form content */

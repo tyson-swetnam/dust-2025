@@ -32,7 +32,7 @@
   <figcaption>Dartmouth Summer Research Project on Artificial Intelligence, 1956. A new field of science had begun. (Credit: IEEE Spectrum, The Minsky Family)</figcaption>
 </figure>
 
-In 1956, a small group of scientists gathered at Dartmouth for a [Summer Research Project on Artificial Intelligence](https://spectrum.ieee.org/dartmouth-ai-workshop). They proposed:
+In 1956, a small group of scientists gathered at Dartmouth for a [Summer Research Project on Artificial Intelligence](https://spectrum.ieee.org/dartmouth-ai-workshop){target=_blank}. They proposed:
 
 > "Every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it."
 
@@ -45,6 +45,18 @@ Nearly 70 years later, we are witnessing the practical realization of their visi
 - Make decisions affecting human lives
 
 With this power comes profound responsibility.
+
+!!! example "AI in Environmental Health Research"
+    DUST researchers are already using AI for:
+
+    - **Image Analysis** - Automated quantification of lung tissue damage, fibrosis, and cellular changes in histopathology slides
+    - **Exposure Modeling** - Machine learning to predict arsenic dispersal patterns from mine tailings across landscapes
+    - **Risk Assessment** - AI models predicting health risks for communities near contaminated sites
+    - **Spectroscopy Analysis** - Neural networks identifying arsenic species from X-ray absorption spectra
+    - **Plant Stress Detection** - Computer vision analyzing hyperspectral imagery to identify metal-stressed vegetation
+    - **Literature Review** - LLMs assisting with systematic reviews of toxicology research
+
+    Each application raises ethical questions about accuracy, bias, transparency, and appropriate use.
 
 ### Two Critical Questions
 
@@ -164,6 +176,24 @@ When models trained on biased data generate synthetic datasets, they perpetuate 
 
     Systems showed significantly higher error rates for women and people of color, leading to false identifications and wrongful arrests.
 
+!!! example "Environmental Health AI Bias Scenarios"
+
+    **Exposure Risk Models Trained on Wealthy Communities**
+
+    An AI model predicting health risks from mine tailings dust is trained primarily on data from well-resourced communities with extensive environmental monitoring. When applied to underserved communities (often disproportionately Indigenous or Latino populations near Arizona mine sites), the model may underestimate risks due to different housing types, occupational exposures, and baseline health disparities.
+
+    **Lung Tissue Image Analysis Bias**
+
+    A deep learning model for detecting fibrosis in lung tissue is trained primarily on tissue from one mouse strain. When applied to genetically diverse animal models (or human tissue samples), it may have reduced accuracy, potentially affecting conclusions about arsenic toxicity across populations.
+
+    **Environmental Justice Data Gaps**
+
+    AI models predicting contamination patterns rely on historical monitoring data. If sampling has been sparse in low-income or Indigenous communities (a documented environmental justice issue), AI models will be less accurate precisely where vulnerable populations live, perpetuating inequity.
+
+    **Plant Species Recognition Bias**
+
+    Computer vision for identifying phytoremediation-suitable plants is trained on images from temperate regions. When deployed in arid Southwest ecosystems, it may misclassify native species, leading researchers to overlook locally-adapted plants with superior remediation potential.
+
 ### Bias Prevention and Mitigation Strategies
 
 #### Data-Centric Approaches
@@ -205,10 +235,10 @@ When models trained on biased data generate synthetic datasets, they perpetuate 
 
 Modern tools help identify bias:
 
-- [IBM AI Fairness 360](https://aif360.mybluemix.net/)
-- [Google What-If Tool](https://pair-code.github.io/what-if-tool/)
-- [Microsoft Fairlearn](https://fairlearn.org/)
-- [Aequitas](http://aequitas.dssg.io/)
+- [IBM AI Fairness 360](https://aif360.mybluemix.net/){target=_blank}
+- [Google What-If Tool](https://pair-code.github.io/what-if-tool/){target=_blank}
+- [Microsoft Fairlearn](https://fairlearn.org/){target=_blank}
+- [Aequitas](http://aequitas.dssg.io/){target=_blank}
 
 **Fairness Metrics**
 
@@ -288,6 +318,24 @@ As researchers employing AI tools, we have ethical obligations:
 - Student records
 - Unpublished research data from collaborators
 
+!!! danger "DUST-Specific Privacy Concerns"
+    **Never input into public AI systems:**
+
+    - Precise GPS coordinates of contaminated sites (security and trespassing risk)
+    - Unpublished arsenic concentration data from specific locations
+    - Biomarker data that could identify participants in community health studies
+    - Mine ownership or legal information related to ongoing remediation
+    - Tribal community data without explicit permission
+    - Pre-publication toxicology results that could affect property values
+    - Patient-level lung disease data linked to exposure sources
+
+    **Safe AI uses:**
+
+    - Asking general questions about phytoremediation approaches (no site specifics)
+    - Getting help with R/Python code for statistical analysis (using synthetic example data)
+    - Drafting methods sections based on published protocols
+    - Summarizing published literature on arsenic toxicity mechanisms
+
 #### 4. Bias Awareness
 
 When using AI in research:
@@ -318,7 +366,7 @@ Responsible AI development requires thorough documentation:
 - Training data characteristics
 - Performance metrics across subgroups
 - Ethical considerations
-- Example: [Google Model Cards](https://modelcards.withgoogle.com/)
+- Example: [Google Model Cards](https://modelcards.withgoogle.com/){target=_blank}
 
 **Datasheets for Datasets** (Gebru et al., 2018)
 
@@ -333,9 +381,9 @@ AI governance is evolving rapidly:
 
 **International Frameworks**
 
-- [UNESCO Recommendation on the Ethics of AI](https://www.unesco.org/en/artificial-intelligence/recommendation-ethics)
-- [OECD AI Principles](https://oecd.ai/en/ai-principles)
-- [EU AI Act](https://artificialintelligenceact.eu/)
+- [UNESCO Recommendation on the Ethics of AI](https://www.unesco.org/en/artificial-intelligence/recommendation-ethics){target=_blank}
+- [OECD AI Principles](https://oecd.ai/en/ai-principles){target=_blank}
+- [EU AI Act](https://artificialintelligenceact.eu/){target=_blank}
 
 **National Policies**
 
@@ -396,60 +444,84 @@ Relevant principles:
 
 Work in small groups to analyze these scenarios:
 
-#### Scenario 1: Research Assistant AI
+#### Scenario 1: AI-Assisted Toxicology Literature Review
 
 !!! example "The Situation"
-    You are writing a grant proposal in a field adjacent to your expertise. You use ChatGPT to:
+    You are writing an NIH Superfund proposal to study novel mechanisms of arsenic-induced lung disease. You use ChatGPT to:
 
-    - Generate a literature review
-    - Suggest methodological approaches
-    - Write sections on statistical analysis
+    - Summarize recent literature on arsenic toxicity pathways
+    - Suggest experimental approaches for measuring lung fibrosis
+    - Draft sections on statistical analysis for dose-response studies
+    - Generate preliminary hypotheses about gene-environment interactions
 
-    You plan to submit without verifying citations or methods in depth.
+    You plan to submit the proposal after lightly editing the AI-generated text, without carefully verifying all citations or confirming that suggested methods are appropriate for arsenic inhalation studies.
 
 **Discussion Questions:**
 
-1. What ethical issues does this raise?
-2. What could go wrong?
-3. How should AI be used ethically in this context?
-4. What disclosure is appropriate?
+1. What ethical issues does this raise? (Consider scientific accuracy, NIH integrity policies)
+2. What could go wrong? (Wrong citations, inappropriate methods, missed critical safety considerations)
+3. How should AI be used ethically in grant writing for toxicology research?
+4. What disclosure is appropriate to NIH reviewers?
+5. What if the AI suggested methods that work for one metalloid but not arsenic?
 
-#### Scenario 2: Biased Training Data
+#### Scenario 2: Environmental Health Risk Prediction with Biased Data
 
 !!! example "The Situation"
-    You are developing an AI model to predict student success in STEM programs. Your training data comes from a university with historical underrepresentation of women and minorities in STEM. The model performs well on aggregate but shows systematic bias.
+    You are developing a machine learning model to predict respiratory disease risk for communities near abandoned mine sites. Your training data comes from:
+
+    - Well-documented mine sites in affluent areas with extensive air quality monitoring
+    - Predominantly from Western mine sites (few data from Southwest dryland ecosystems)
+    - Communities with good healthcare access and documented health outcomes
+
+    When you test the model on data from underserved communities near Arizona mine tailings (often Indigenous or Latino populations with limited monitoring data), the model systematically underestimates risks. These are precisely the environmental justice communities that would most benefit from accurate predictions.
 
 **Discussion Questions:**
 
-1. What types of bias might be present?
-2. What are the potential harms if this system is deployed?
-3. What data-centric approaches could help?
-4. What algorithmic interventions might work?
-5. Should the system be deployed? Under what conditions?
+1. What types of bias are present in this training data? (Selection, exclusion, measurement)
+2. What are the potential harms if this system is deployed to guide remediation priorities?
+3. What data-centric approaches could help? (Active sampling in underrepresented areas?)
+4. What algorithmic interventions might work? (Fairness constraints? Domain adaptation?)
+5. Should the system be deployed? Under what conditions? Who should decide?
+6. How do you balance "perfect data" with "timely action" for environmental justice?
 
-#### Scenario 3: AI-Assisted Discovery
+#### Scenario 3: AI-Assisted Phytoremediation Discovery
 
 !!! example "The Situation"
-    You use AI to analyze thousands of papers and identify a novel research direction. The AI connects ideas across disciplines in ways humans had not. You design and execute experiments based on AI suggestions, leading to publishable results.
+    You use an AI system to analyze thousands of papers on plant metal uptake, arsenic biochemistry, and dryland ecology. The AI identifies a novel connection: a drought-stress pathway in native Arizona plants may enhance arsenic sequestration in roots, suggesting specific plant species for phytoremediation that hadn't been considered.
+
+    You design field experiments based on this AI-generated hypothesis. The experiments are successful, showing that AI-suggested native species outperform traditional hyperaccumulators in arid conditions. You prepare a high-impact publication on "AI-discovered phytoremediation approach."
 
 **Discussion Questions:**
 
-1. How should you attribute the AI's contribution?
-2. What should you disclose in the methods section?
+1. How should you attribute the AI's contribution? (Co-author? Tool acknowledgment?)
+2. What should you disclose in the methods section? (AI model, version, prompts, literature corpus?)
 3. If AI identified the hypothesis, who "owns" the intellectual contribution?
-4. How does this differ from using a search engine or database?
+4. How does this differ from using PubMed search or a literature database?
+5. What if the AI missed critical papers on plant toxicity, leading you to suggest a harmful approach?
+6. Do you have ethical obligations to the Indigenous knowledge that may underlie some plant use patterns the AI detected?
 
-#### Scenario 4: Dual-Use Research
+#### Scenario 4: Open-Source Contamination Mapping Model
 
 !!! example "The Situation"
-    Your AI model predicts molecular structures with therapeutic potential. However, the same model could theoretically be used to design harmful compounds. You plan to publish the model open-source.
+    You develop a machine learning model that predicts arsenic contamination patterns around mine tailings sites using satellite imagery, geology, and meteorological data. The model is highly accurate and could benefit remediation planning nationwide.
+
+    However, the same model could be used by:
+
+    - Property developers to identify and conceal contaminated land
+    - Bad actors to target vulnerable contaminated sites for illegal activities
+    - Those seeking to avoid regulatory oversight by identifying unmonitored sites
+    - Real estate interests to devalue Indigenous or low-income lands
+
+    You plan to publish the model open-source with all training data and code to maximize scientific benefit and environmental justice applications.
 
 **Discussion Questions:**
 
-1. What are your ethical obligations?
-2. Should you restrict access to the model?
-3. How do you balance openness with safety?
-4. What documentation or warnings should accompany release?
+1. What are your ethical obligations to both openness and safety?
+2. Should you restrict access to the model? How? (Gated access? Institutional use only?)
+3. How do you balance open science principles with potential for harm?
+4. What documentation, warnings, or terms of use should accompany release?
+5. Should you consult with affected communities before releasing?
+6. Does publishing contamination predictions violate privacy of residents near sites?
 
 ### Group Reporting
 
@@ -572,27 +644,27 @@ Congratulations on completing all three lessons! You now have foundational knowl
 
 **Frameworks and Guidelines:**
 
-- [UNESCO Recommendation on Ethics of AI](https://www.unesco.org/en/artificial-intelligence/recommendation-ethics)
-- [Asilomar AI Principles](https://futureoflife.org/open-letter/ai-principles/)
-- [Montreal Declaration for Responsible AI](https://www.montrealdeclaration-responsibleai.com/)
+- [UNESCO Recommendation on Ethics of AI](https://www.unesco.org/en/artificial-intelligence/recommendation-ethics){target=_blank}
+- [Asilomar AI Principles](https://futureoflife.org/open-letter/ai-principles/){target=_blank}
+- [Montreal Declaration for Responsible AI](https://www.montrealdeclaration-responsibleai.com/){target=_blank}
 
 **Tools and Platforms:**
 
-- [IBM AI Fairness 360](https://aif360.mybluemix.net/)
-- [Microsoft Fairlearn](https://fairlearn.org/)
-- [Google PAIR](https://pair.withgoogle.com/)
+- [IBM AI Fairness 360](https://aif360.mybluemix.net/){target=_blank}
+- [Microsoft Fairlearn](https://fairlearn.org/){target=_blank}
+- [Google PAIR](https://pair.withgoogle.com/){target=_blank}
 
 **Further Reading:**
 
-- [Weapons of Math Destruction](https://en.wikipedia.org/wiki/Weapons_of_Math_Destruction) by Cathy O'Neil
-- [Artificial Unintelligence](https://mitpress.mit.edu/9780262537018/artificial-unintelligence/) by Meredith Broussard
-- [Atlas of AI](https://anatomyof.ai/) by Kate Crawford
+- [Weapons of Math Destruction](https://en.wikipedia.org/wiki/Weapons_of_Math_Destruction){target=_blank} by Cathy O'Neil
+- [Artificial Unintelligence](https://mitpress.mit.edu/9780262537018/artificial-unintelligence/){target=_blank} by Meredith Broussard
+- [Atlas of AI](https://anatomyof.ai/){target=_blank} by Kate Crawford
 
 **Courses:**
 
-- [Elements of AI](https://www.elementsofai.com/)
-- [Ethics of AI (edX)](https://www.edx.org/learn/ethics/helsingin-yliopisto-ethics-of-ai)
-- [Fairness in Machine Learning](https://fairmlclass.github.io/)
+- [Elements of AI](https://www.elementsofai.com/){target=_blank}
+- [Ethics of AI (edX)](https://www.edx.org/learn/ethics/helsingin-yliopisto-ethics-of-ai){target=_blank}
+- [Fairness in Machine Learning](https://fairmlclass.github.io/){target=_blank}
 
 ---
 

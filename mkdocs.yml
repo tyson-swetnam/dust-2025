@@ -1,6 +1,6 @@
-site_name: 'DUST 2025: Open Science Training'
-site_description: 'Three comprehensive lessons on Open Science, Data Management, and AI Ethics'
-site_author: 'University of Arizona'
+site_name: 'DUST Superfund 2025: Open Science Training'
+site_description: 'Open Science, Data Management, and AI Ethics training for University of Arizona DUST Superfund Research Center graduate students'
+site_author: 'University of Arizona DUST Superfund Research Center'
 site_url: https://tswetnam.github.io/dust-2025
 
 # Repository
@@ -49,9 +49,7 @@ theme:
 
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: deep orange
+      scheme: ua
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -59,16 +57,16 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: deep orange
+      primary: red
+      accent: blue
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
 
   # Fonts
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Montserrat
+    code: Regular
 
   # Features
   features:
@@ -85,15 +83,13 @@ theme:
     - search.suggest
     - content.code.copy
     - content.code.annotate
-    - content.action.edit
-    - content.action.view
     - content.tooltips
     - toc.follow
 
   # Favicon and logo
-  favicon: assets/favicon.ico
+  favicon: assets/ua.ico
+  logo: assets/ua.png
   icon:
-    logo: material/school
     repo: fontawesome/brands/github
 
 # Extra configuration

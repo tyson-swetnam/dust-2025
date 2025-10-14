@@ -33,6 +33,16 @@
     - If you returned to your own data in five years, would you understand it?
     - When publishing, can you easily find all correct versions of your data?
 
+!!! example "DUST Research Scenario"
+    Imagine a collaborator asks you to share:
+
+    - Arsenic concentration measurements from 50 mine tailings samples
+    - Lung tissue images from an inhalation exposure study
+    - Plant biomass and metal uptake data from phytoremediation field plots
+    - GPS coordinates and soil characterization from multiple Superfund sites
+
+    Could they understand your file naming conventions? Would they know which samples came from which sites? Would they understand the units, detection limits, and quality control procedures? Environmental health research generates complex, multi-dimensional datasets requiring exceptional organization.
+
 ### The Biggest Challenge
 
 !!! danger "The #1 Data Management Problem"
@@ -61,6 +71,15 @@
     - Privacy, IP, and reuse policies
     - Review of DMP as part of proposal merit
 
+!!! info "NIH Superfund Program Requirements"
+    NIH Superfund Research Program grants require:
+
+    - Data Management and Sharing Plans (DMSP) describing data types, standards, preservation, and timelines
+    - Data sharing within specified timeframes (often 1 year after collection or upon publication)
+    - Consideration of human subjects protections for community health data
+    - Documentation of sensitive data restrictions (location data for contaminated sites, participant privacy)
+    - Use of appropriate repositories (EPA ScienceHub, NIEHS repositories, or domain-specific archives)
+
 ---
 
 ## Core Concepts (25 minutes)
@@ -77,6 +96,17 @@ Different data types require different management strategies:
 - **Models & Code** - Simulations, algorithms, analysis scripts
 - **Discipline-specific** - FASTA (biology), FITS (astronomy), CIF (chemistry)
 - **Instrument-specific** - Raw equipment outputs, sensor readings
+
+!!! example "DUST Data Types"
+    **Environmental Chemistry** - ICP-MS outputs (arsenic/metalloid concentrations), XRD patterns, synchrotron XAS spectra
+
+    **Toxicology** - Flow cytometry data, histopathology images, gene expression arrays, biomarker measurements
+
+    **Phytoremediation** - Plant biomass measurements, metal uptake data, hyperspectral imaging, LiDAR point clouds
+
+    **Epidemiology** - Survey responses (with PII protections), biomarker data (HIPAA-compliant), geospatial health data
+
+    **Field Sampling** - GPS coordinates, soil cores, air quality measurements, meteorological data
 
 **Data Sources:**
 
@@ -103,7 +133,7 @@ Different data types require different management strategies:
 ### The Data Life Cycle
 
 <figure markdown>
-  ![Data Life Cycle](https://www.nsf.gov/pubs/2019/nsf19069/nsf19069_1.jpg){ width="500" }
+  ![Data Life Cycle](../assets/data_life_cycle.png){ width="500" }
   <figcaption>Data flow through multiple stages, each with specific management needs</figcaption>
 </figure>
 
@@ -146,6 +176,23 @@ Understanding where data are in their lifecycle helps plan management strategies
     New Folder (2)/results!!!.csv
     ```
 
+!!! example "DUST File Naming Examples"
+    ```
+    # Mine Tailings Samples
+    2025-01-20_IronKing_MT-001_As-concentration_ICP-MS.csv
+    2025-01-20_IronKing_MT-002_XRD-pattern_raw.xy
+
+    # Lung Tissue Images
+    exp-027_mouse-14_lung-section-03_H&E-stain_40x.tif
+    exp-027_mouse-14_lung-section-03_collagen-IF_20x.tif
+
+    # Phytoremediation Field Data
+    2025-03-15_site-B_plot-12_Atriplex-canescens_biomass.csv
+    2025-03-15_site-B_hyperspectral_processed_NDVI.tif
+
+    # Keep consistent: YYYY-MM-DD_site_sample-ID_analysis-type_details.ext
+    ```
+
 #### :material-quality-high: Assure
 
 - Record quality conditions during collection
@@ -180,10 +227,21 @@ Understanding where data are in their lifecycle helps plan management strategies
 
 **Metadata Standards:**
 
-- [DataCite](https://schema.datacite.org/) - Publishing data
-- [Dublin Core](http://www.dublincore.org/) - Web-based sharing
-- [ISO 19115](https://www.iso.org/standard/53798.html) - Geospatial data
-- Domain-specific standards - Check [FAIRsharing.org](https://fairsharing.org/)
+- [DataCite](https://schema.datacite.org/){target=_blank} - Publishing data
+- [Dublin Core](http://www.dublincore.org/){target=_blank} - Web-based sharing
+- [ISO 19115](https://www.iso.org/standard/53798.html){target=_blank} - Geospatial data
+- [MIxS](https://genomicsstandardsconsortium.github.io/mixs/){target=_blank} - Environmental samples (soil, water)
+- [Darwin Core](https://dwc.tdwg.org/){target=_blank} - Biodiversity/ecological data
+- Domain-specific standards - Check [FAIRsharing.org](https://fairsharing.org/){target=_blank}
+
+!!! example "DUST Metadata Needs"
+    **Mine Tailings Samples** - Site GPS coordinates, collection date/time, depth, weather conditions, proximity to mining activity, historical context, chain of custody
+
+    **Toxicology Experiments** - Animal strain/source, exposure protocol (concentration, duration, route), housing conditions, institutional approvals (IACUC), treatment randomization
+
+    **Chemical Analysis** - Instrument make/model, calibration standards, detection limits, QA/QC procedures, analyst ID, date of analysis, method references
+
+    **Field Studies** - Plot layout, vegetation surveys, soil characterization, meteorological data, disturbance history, GPS accuracy
 
 #### :material-archive: Preserve
 
@@ -192,10 +250,21 @@ Understanding where data are in their lifecycle helps plan management strategies
 
 **Preservation Repositories:**
 
-- **Domain-specific** - [GenBank](https://www.ncbi.nlm.nih.gov/genbank/) (sequences), [PANGAEA](https://pangaea.de/) (Earth science)
+- **Domain-specific** - [GenBank](https://www.ncbi.nlm.nih.gov/genbank/){target=_blank} (sequences), [PANGAEA](https://pangaea.de/){target=_blank} (Earth science)
+- **Environmental/Health** - [EPA ScienceHub](https://www.epa.gov/sciencehub){target=_blank}, NIEHS data repositories
 - **Institutional** - University libraries, research centers
-- **General purpose** - [Zenodo](https://zenodo.org/), [Dryad](https://datadryad.org/), [Figshare](https://figshare.com/)
-- **CyVerse** - [Data Commons](http://datacommons.cyverse.org/) for computational biology
+- **General purpose** - [Zenodo](https://zenodo.org/){target=_blank}, [Dryad](https://datadryad.org/){target=_blank}, [Figshare](https://figshare.com/){target=_blank}
+- **CyVerse** - [Data Commons](http://datacommons.cyverse.org/){target=_blank} for computational biology
+- **Geospatial** - [USGS ScienceBase](https://www.sciencebase.gov/){target=_blank}, [DataONE](https://www.dataone.org/){target=_blank}
+
+!!! example "DUST Repository Choices"
+    **Toxicology Data** - Consider NIEHS Data Portal or NIH-supported repositories (dbGaP for human subjects, figshare for animal studies)
+
+    **Environmental Chemistry** - EPA ScienceHub for data relevant to contaminated sites, or Zenodo with appropriate environmental keywords
+
+    **Geospatial Data** - DataONE or USGS ScienceBase for mine site characterization and remediation monitoring data
+
+    **Spectroscopy Data** - Zenodo allows large files and assigns DOIs, perfect for synchrotron XAS or hyperspectral datasets
 
 **Preservation Best Practices:**
 
@@ -211,8 +280,8 @@ Understanding where data are in their lifecycle helps plan management strategies
 Good metadata enables discovery by you and others:
 
 - Repository search interfaces
-- [Google Dataset Search](https://datasetsearch.research.google.com/)
-- [DataOne](https://www.dataone.org/)
+- [Google Dataset Search](https://datasetsearch.research.google.com/){target=_blank}
+- [DataOne](https://www.dataone.org/){target=_blank}
 - Discipline-specific portals
 - Repository aggregators
 
@@ -236,10 +305,10 @@ Good metadata enables discovery by you and others:
 
 ### FAIR Principles
 
-In 2016, the [FAIR Guiding Principles](https://www.nature.com/articles/sdata201618) revolutionized how we think about data management.
+In 2016, the [FAIR Guiding Principles](https://www.nature.com/articles/sdata201618){target=_blank} revolutionized how we think about data management.
 
 <figure markdown>
-  ![FAIR Principles](https://www.go-fair.org/wp-content/uploads/2022/01/FAIR-principles.jpg){ width="500" }
+  ![FAIR Principles](../assets/fair_principles.png){ width="500" }
   <figcaption>FAIR Principles provide a framework for data stewardship</figcaption>
 </figure>
 
@@ -310,13 +379,8 @@ In 2016, the [FAIR Guiding Principles](https://www.nature.com/articles/sdata2016
 
 ### CARE Principles
 
-<figure markdown>
-  ![CARE Principles](https://www.gida-global.org/s/CARE-Principles-for-Indigenous-Data-Governance.pdf){ width="400" }
-  <figcaption>CARE Principles center Indigenous rights and interests in data governance</figcaption>
-</figure>
-
 !!! quote "Nothing About Us Without Us"
-    The [CARE Principles](https://www.gida-global.org/care) for Indigenous Data Governance ensure Indigenous Peoples' rights and interests in data are respected.
+    The [CARE Principles](https://www.gida-global.org/care){target=_blank} for Indigenous Data Governance ensure Indigenous Peoples' rights and interests in data are respected. CARE complements FAIR by centering Indigenous rights and interests in data governance.
 
 **C - Collective Benefit**
 
@@ -401,9 +465,9 @@ In 2016, the [FAIR Guiding Principles](https://www.nature.com/articles/sdata2016
    - Ethical approvals needed
 
 !!! tip "DMP Tools"
-    **[DMPTool](https://dmptool.org/)** - Create plans using funder templates
+    **[DMPTool](https://dmptool.org/){target=_blank}** - Create plans using funder templates
 
-    **[Data Stewardship Wizard](https://ds-wizard.org/)** - Knowledge-based DMP creation
+    **[Data Stewardship Wizard](https://ds-wizard.org/){target=_blank}** - Knowledge-based DMP creation
 
     Both tools provide guidance, templates, and examples to help you write effective DMPs.
 
@@ -449,9 +513,9 @@ By default, creative work is under exclusive copyright. To enable reuse, you mus
 
 **Resources:**
 
-- [Choose a License](https://choosealicense.com/)
-- [Creative Commons License Chooser](https://creativecommons.org/choose/)
-- [Open Data Commons Licenses](https://opendatacommons.org/licenses/)
+- [Choose a License](https://choosealicense.com/){target=_blank}
+- [Creative Commons License Chooser](https://creativecommons.org/choose/){target=_blank}
+- [Open Data Commons Licenses](https://opendatacommons.org/licenses/){target=_blank}
 
 ---
 
@@ -518,37 +582,44 @@ Evaluate your current practices across multiple dimensions:
 
 Work in small groups on this scenario:
 
-!!! example "Scenario: Multi-site Ecological Study"
-    You are planning a 3-year study collecting:
+!!! example "Scenario: Mine Waste Phytoremediation Study"
+    You are planning a 4-year NIH Superfund-funded study investigating arsenic uptake by native plant species at abandoned mine sites in Arizona.
 
-    - Temperature/humidity sensors (15-minute intervals)
-    - Weekly field observations (paper forms)
-    - Monthly camera trap images
-    - Annual vegetation surveys
-    - Soil samples (sent to external lab)
+    **Data to be collected:**
 
-    The project involves:
+    - Soil samples (100+ samples/year): ICP-MS for As/metal concentrations
+    - Plant tissue samples: Biomass, metal uptake, tissue distribution
+    - Hyperspectral drone imagery (quarterly): Plant stress detection
+    - Weather station data (15-min intervals): Temperature, humidity, precipitation
+    - GPS/GIS data: Site characterization, vegetation mapping
+    - Laboratory notebooks: Experimental procedures, observations
+    - Microscopy images: Root structure, fungal associations
 
-    - 5 field sites
-    - 3 institutions
-    - 8 team members
-    - NSF funding requiring DMP
-    - Data must be public after 2 years
+    **Project involves:**
+
+    - 3 mine sites (some on/near Tribal lands)
+    - 4 institutions (UA, ASU, external lab, Tribal consultation)
+    - 10 team members (PIs, grad students, technicians, community partners)
+    - NIH Superfund funding requiring DMSP
+    - Data must be public 1 year after publication
+    - Some location data may need restriction to prevent looting of remediation plants
 
 **Your Task:** Draft key sections of the DMP addressing:
 
-1. **Data types and volumes** - Estimate sizes, formats
-2. **Metadata** - What standards apply? What needs documentation?
-3. **Storage** - During project, where will data live?
-4. **Quality** - How ensure accuracy and completeness?
-5. **Sharing** - Timeline, repository, restrictions
-6. **Roles** - Who is responsible for what?
+1. **Data types and volumes** - Estimate sizes, formats (ICP-MS output, drone imagery, etc.)
+2. **Metadata** - What standards apply? (MIxS for soil samples, Darwin Core for plants, ISO 19115 for spatial data)
+3. **Storage** - During project, where will data live? (Institutional storage, field backups)
+4. **Quality** - How ensure accuracy? (Calibration standards, duplicate samples, QA/QC protocols)
+5. **Sharing** - Timeline, repository (EPA ScienceHub? Zenodo?), restrictions for sensitive locations
+6. **Roles** - Who is responsible for what? (Data manager, PI oversight, institutional compliance)
+7. **Ethical considerations** - Tribal consultation, community benefit, location data sensitivity
 
 **Discussion Points:**
 
-- What challenges did you identify?
-- What information is missing?
-- What would you do differently in your own project?
+- How do you balance open data with protecting sensitive site locations?
+- What metadata is critical for someone to reuse your phytoremediation data?
+- How do you handle data from external labs with different formats?
+- What are the implications of working near/on Tribal lands?
 
 ### Individual Action Planning
 
@@ -611,11 +682,11 @@ In Lesson 3, we will address ethical considerations in modern research by explor
 
 ### Additional Resources
 
-- [DataOne Best Practices](https://dataoneorg.github.io/Education/bestpractices/)
-- [FAIR Principles](https://www.go-fair.org/fair-principles/)
-- [CARE Principles](https://www.gida-global.org/care)
-- [DMPTool](https://dmptool.org/)
-- [Registry of Research Data Repositories](https://www.re3data.org/)
+- [DataOne Best Practices](https://dataoneorg.github.io/Education/bestpractices/){target=_blank}
+- [FAIR Principles](https://www.go-fair.org/fair-principles/){target=_blank}
+- [CARE Principles](https://www.gida-global.org/care){target=_blank}
+- [DMPTool](https://dmptool.org/){target=_blank}
+- [Registry of Research Data Repositories](https://www.re3data.org/){target=_blank}
 
 ---
 

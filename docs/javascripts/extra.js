@@ -65,38 +65,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Expand/collapse all Q&A sections (useful for instructors)
-  function addExpandCollapseButtons() {
-    const detailsElements = document.querySelectorAll('details');
-    if (detailsElements.length > 1) {
-      const container = document.querySelector('.md-content__inner');
-      if (container && !document.getElementById('expand-collapse-controls')) {
-        const controls = document.createElement('div');
-        controls.id = 'expand-collapse-controls';
-        controls.style.cssText = 'text-align: right; margin-bottom: 1rem;';
-
-        const expandBtn = document.createElement('button');
-        expandBtn.textContent = 'Expand All';
-        expandBtn.className = 'md-button md-button--primary';
-        expandBtn.style.marginRight = '0.5rem';
-        expandBtn.onclick = () => detailsElements.forEach(d => d.open = true);
-
-        const collapseBtn = document.createElement('button');
-        collapseBtn.textContent = 'Collapse All';
-        collapseBtn.className = 'md-button';
-        collapseBtn.onclick = () => detailsElements.forEach(d => d.open = false);
-
-        controls.appendChild(expandBtn);
-        controls.appendChild(collapseBtn);
-        container.insertBefore(controls, container.firstChild);
-      }
-    }
-  }
-
-  // Add expand/collapse buttons only on lesson pages
-  if (window.location.pathname.includes('lesson')) {
-    addExpandCollapseButtons();
-  }
+  // Expand/collapse functionality removed per user request
+  // (Previously added "Expand All" / "Collapse All" buttons)
 
   // Reading time estimator
   function estimateReadingTime() {

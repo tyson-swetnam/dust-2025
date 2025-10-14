@@ -2,7 +2,18 @@
 
 ## Overview
 
-The DUST 2025 Open Science Training program is a comprehensive educational resource designed to equip researchers with essential skills for conducting modern, transparent, and reproducible science. This training synthesizes best practices from leading open science initiatives and presents them in an accessible, practical format.
+The DUST 2025 Open Science Training program is a comprehensive educational resource designed specifically for the **University of Arizona DUST Superfund Research Center** community. This training equips environmental health researchers with essential skills for conducting modern, transparent, and reproducible science in the context of mine waste contamination, toxicology, and environmental remediation research.
+
+## Why Open Science Matters for Superfund Research
+
+As researchers studying hazardous waste sites, arsenic exposure, and environmental health impacts, open science practices are critical for:
+
+- **Community Impact** - Sharing findings transparently with communities affected by mine tailings
+- **Reproducibility** - Ensuring toxicology and exposure studies can be validated and built upon
+- **Collaboration** - Facilitating multi-institutional research on complex environmental health problems
+- **Compliance** - Meeting NIH Superfund Research Program data sharing requirements
+- **Environmental Justice** - Making research accessible to policymakers and affected populations
+- **Scientific Integrity** - Documenting methods for studies involving hazardous materials and vulnerable populations
 
 ## Training Philosophy
 
@@ -73,13 +84,14 @@ All materials are licensed CC-BY 4.0, allowing you to adapt and remix as needed 
 
 Use these lessons to:
 
-- Establish shared practices and standards
-- Create data management protocols
-- Develop ethical guidelines for AI use
-- Build open science culture
-- Prepare for funder requirements
+- Establish shared practices and standards for DUST research projects
+- Create data management protocols for environmental samples and exposure data
+- Develop ethical guidelines for AI use in environmental health research
+- Build open science culture across toxicology, remediation, and epidemiology teams
+- Prepare for NIH Superfund Research Program grant requirements
+- Document protocols for handling sensitive location data from contaminated sites
 
-Consider working through lessons together as a group, discussing how to apply concepts to your specific projects.
+Consider working through lessons together as a group, discussing how to apply concepts to mine waste studies, phytoremediation experiments, and community health research.
 
 ## Technical Implementation
 
