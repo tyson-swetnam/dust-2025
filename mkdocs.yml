@@ -1,0 +1,184 @@
+site_name: 'DUST 2025: Open Science Training'
+site_description: 'Three comprehensive lessons on Open Science, Data Management, and AI Ethics'
+site_author: 'University of Arizona'
+site_url: https://tswetnam.github.io/dust-2025
+
+# Repository
+repo_name: dust-2025
+repo_url: https://github.com/tswetnam/dust-2025
+edit_uri: edit/main/docs/
+
+# Copyright
+copyright: 'Copyright &copy; 2025 University of Arizona'
+
+# Navigation
+nav:
+  - Home:
+    - Welcome: index.md
+    - About This Training: about.md
+  - Lessons:
+    - 'Lesson 1: Foundations of Open Science': lesson1_open_science/index.md
+    - 'Lesson 2: Modern Data Management': lesson2_data_management/index.md
+    - 'Lesson 3: AI Ethics': lesson3_ai_ethics/index.md
+  - Resources:
+    - Additional Reading: resources.md
+    - Acknowledgments: acknowledgments.md
+
+# Theme Configuration
+theme:
+  name: material
+
+  # Static templates
+  static_templates:
+    - 404.html
+
+  # Search configuration
+  include_search_page: true
+  search_index_only: false
+
+  # Language
+  language: en
+
+  # Color palette with theme toggle
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  # Fonts
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  # Features
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - content.action.view
+    - content.tooltips
+    - toc.follow
+
+  # Favicon and logo
+  favicon: assets/favicon.ico
+  icon:
+    logo: material/school
+    repo: fontawesome/brands/github
+
+# Extra configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/tswetnam/dust-2025
+    - icon: fontawesome/brands/orcid
+      link: https://orcid.org/0000-0002-6639-7181
+
+  analytics:
+    provider: google
+    property: G-NYETZFD8DN
+
+  # Version information
+  version:
+    provider: mike
+
+# Markdown extensions
+markdown_extensions:
+  # Core extensions
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - meta
+  - toc:
+      permalink: true
+      title: On this page
+      toc_depth: 3
+
+  # PyMdown extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+  - minify:
+      minify_html: true
+
+# Custom CSS
+extra_css:
+  - stylesheets/extra.css
+
+# Custom JavaScript
+extra_javascript:
+  - javascripts/extra.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

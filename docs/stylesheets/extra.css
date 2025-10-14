@@ -1,0 +1,201 @@
+/* Custom CSS for DUST 2025 Open Science Training */
+
+/* Root variables for consistent theming */
+:root {
+  --md-primary-fg-color: #3f51b5;
+  --md-accent-fg-color: #ff5722;
+}
+
+/* Improve readability of long-form content */
+.md-typeset {
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 0.5rem;
+}
+
+/* Improve spacing for lesson objectives and admonitions */
+.md-typeset .admonition {
+  margin: 1.5em 0;
+}
+
+.md-typeset .admonition-title {
+  font-weight: 600;
+}
+
+/* Style for call-out cards on homepage */
+.md-typeset .grid.cards {
+  margin-top: 2rem;
+}
+
+/* Better code block styling */
+.md-typeset pre > code {
+  border-radius: 0.2rem;
+}
+
+.md-typeset .highlight {
+  margin: 1.5em 0;
+}
+
+/* Improve table styling */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.2rem;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--md-default-fg-color--lightest);
+  font-weight: 600;
+}
+
+/* Button styling for lesson navigation */
+.md-button {
+  margin: 0.5rem 0.25rem;
+}
+
+.md-button--primary {
+  background-color: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: white;
+}
+
+.md-button--primary:hover {
+  opacity: 0.9;
+}
+
+/* Figure captions */
+.md-typeset figcaption {
+  font-size: 0.85rem;
+  font-style: italic;
+  text-align: center;
+  color: var(--md-default-fg-color--light);
+  margin-top: 0.5rem;
+}
+
+/* Improve quiz/question styling */
+.md-typeset details {
+  margin: 1.5em 0;
+}
+
+.md-typeset details > summary {
+  cursor: pointer;
+  padding: 0.5rem 0;
+  font-weight: 500;
+}
+
+.md-typeset details[open] > summary {
+  margin-bottom: 1rem;
+}
+
+/* Tabs styling */
+.md-typeset .tabbed-set {
+  margin: 1.5em 0;
+}
+
+.md-typeset .tabbed-labels {
+  margin-bottom: 0;
+}
+
+/* Footer improvements */
+.md-footer__link {
+  padding: 1rem 0;
+}
+
+/* Search highlighting */
+.md-search-result mark {
+  background-color: var(--md-accent-fg-color);
+  color: white;
+}
+
+/* Improve task list appearance */
+.md-typeset .task-list-item input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 76.1875em) {
+  .md-typeset {
+    font-size: 0.85rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .md-header,
+  .md-footer,
+  .md-sidebar,
+  .md-nav__link--active,
+  .md-content__button {
+    display: none !important;
+  }
+
+  .md-content {
+    max-width: 100% !important;
+  }
+
+  .md-typeset a::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+  }
+}
+
+/* Accessibility improvements */
+.md-typeset a:focus,
+.md-button:focus {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}
+
+/* Skip to content link for keyboard navigation */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--md-primary-fg-color);
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+/* Custom styling for lesson info boxes */
+.md-typeset .admonition.info.lesson-overview {
+  border-left: 0.25rem solid #448aff;
+}
+
+.md-typeset .admonition.success.learning-objectives {
+  border-left: 0.25rem solid #00c853;
+}
+
+/* Enhance visibility of external links */
+.md-typeset a[href^="http"]::after {
+  content: " \2197";
+  font-size: 0.8em;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset a[href^="http"][target="_blank"]::after {
+  content: " \2197";
+}
+
+/* Don't show icon for buttons and specific elements */
+.md-button::after,
+.md-typeset .md-nav__link::after,
+.md-typeset img + a::after {
+  content: none !important;
+}

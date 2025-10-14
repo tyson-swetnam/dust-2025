@@ -1,0 +1,18 @@
+# Python dependencies for DUST 2025 MkDocs site
+
+# Core MkDocs
+mkdocs>=1.5.3
+mkdocs-material>=9.5.3
+
+# Plugins
+mkdocs-git-revision-date-localized-plugin>=1.2.1
+mkdocs-minify-plugin>=0.7.1
+
+# Optional but recommended plugins
+mkdocs-macros-plugin>=1.0.5
+
+# Python Markdown extensions (included with Material but listed for clarity)
+pymdown-extensions>=10.5
+
+# Additional utilities
+Pygments>=2.17.2
