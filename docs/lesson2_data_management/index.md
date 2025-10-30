@@ -268,7 +268,7 @@ Understanding where data are in their lifecycle helps plan management strategies
 
 **Preservation Best Practices:**
 
-1. Choose repositories with TRUST principles
+1. Choose repositories with [TRUST principles](https://www.nature.com/articles/s41597-020-0486-7){target=_blank}
 2. Use open, non-proprietary formats when possible
 3. Include comprehensive documentation
 4. Assign persistent identifiers (DOIs)
@@ -685,6 +685,7 @@ In Lesson 3, we will address ethical considerations in modern research by explor
 - [DataOne Best Practices](https://dataoneorg.github.io/Education/bestpractices/){target=_blank}
 - [FAIR Principles](https://www.go-fair.org/fair-principles/){target=_blank}
 - [CARE Principles](https://www.gida-global.org/care){target=_blank}
+- [TRUST Principles](https://www.nature.com/articles/s41597-020-0486-7){target=_blank}
 - [DMPTool](https://dmptool.org/){target=_blank}
 - [Registry of Research Data Repositories](https://www.re3data.org/){target=_blank}
 
